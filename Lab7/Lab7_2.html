@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>let or var</title>
+    </head>
+    <body>
+        <script>
+            a=10;
+
+            abc();
+            console.log("Globally: ",a);
+            document.write("<br/>Globally = ",a);
+
+            function abc(){
+                var a=23;
+                if(true){
+                    let a= 18;
+                    console.log("<br/>Inside block: ",a);
+                    document.write("Inside block = ",a);
+                }
+                console.log("Inside function: ",a);
+                document.write("<br/>Inside function = ",a);
+            }
+        </script>
+    </body>
+</html>

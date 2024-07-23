@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Keyboard Events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Keyboard Events</h1>
+    <p>Press any key to see the events</p>
+
+    <script>
+        // Event handler for keydown
+        document.addEventListener("keydown", (event) => {
+            console.log("Keydown event:", event.key);
+        });
+
+        // Event handler for keypress
+        document.addEventListener("keypress", (event) => {
+            console.log("Keypress event:", event.key);
+        });
+
+        // Event handler for keyup
+        document.addEventListener("keyup", (event) => {
+            console.log("Keyup event:", event.key);
+        });
+    </script>
+</body>
+</html>

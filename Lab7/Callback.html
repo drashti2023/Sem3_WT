@@ -1,0 +1,20 @@
+<html>
+<head>
+    <title>Callback Function</title>
+</head>
+<body>
+    <p id="demo"> Callback Function </p>
+
+    <script>
+        function display(result){
+            document.getElementById("demo").innerHTML = result;
+        } 
+        function myCalculator(n1,n2,myCallback){
+            sum = n1 + n2;
+            myCallback(sum);
+        }
+        myCalculator(18,5,display);
+        
+     </script>
+</body>
+</html>

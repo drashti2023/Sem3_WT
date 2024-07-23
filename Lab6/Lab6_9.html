@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q9 Mouse events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: white; /* Initial background color */
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="keyInput">Input 
+
+    <script>
+        const keyInput = document.getElementById("keyInput");
+
+        // Event handler for key press
+        keyInput.addEventListener("keydown", (event) => {
+            const key = event.key.toLowerCase(); // Convert to lowercase for consistency
+
+            if (key === "a" || key === "e" || key === "i" || key === "o" || key === "u") {
+                alert(`Vowel "${key}" is pressed!`);
+            }
+        });
+
+        // Event handler for key release
+        keyInput.addEventListener("keyup", () => {
+            document.body.style.backgroundColor = "blue"; // Change background color to blue
+        });
+    </script>
+</body>
+</html>

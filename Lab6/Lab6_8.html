@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Q8 Mouse events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #heading {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">Mouse Hover</h1>
+    <button id="findTime">Find Time</button>
+    <button id="red">Red</button>
+    <button id="green">Green</button>
+    <button id="purple">Purple</button>
+    <button id="teal">Teal</button>
+
+    <script>
+        const heading = document.getElementById("heading");
+        const findTimeButton = document.getElementById("findTime");
+        const redButton = document.getElementById("red");
+        const greenButton = document.getElementById("green");
+        const purpleButton = document.getElementById("purple");
+        const tealButton = document.getElementById("teal");
+
+        // Mouseover event for heading
+        heading.addEventListener("mouseover", () => {
+            heading.style.color = "yellow";
+        });
+
+        // Mouseout event for heading
+        heading.addEventListener("mouseout", () => {
+            heading.style.color = "black";
+        });
+
+        // Click event for "Find Time" button
+        findTimeButton.addEventListener("click", () => {
+            const now = new Date();
+            alert(`Current date and time: ${now}`);
+        });
+
+        // Click event for "Red" button
+        redButton.addEventListener("click", () => {
+            document.body.style.backgroundColor = "red";
+        });
+
+        // Click event for "Green" button
+        greenButton.addEventListener("click", () => {
+            document.body.style.backgroundColor = "green";
+        });
+
+        purpleButton.addEventListener("click", () => {
+            document.body.style.backgroundColor = "purple";
+        });
+
+        tealButton.addEventListener("click", () => {
+            document.body.style.backgroundColor = "teal";
+        });
+
+    
+    </script>
+</body>
+</html>

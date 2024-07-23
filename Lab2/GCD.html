@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>
+            GCD (Lab2_4)
+        </title>
+    </head>
+    <body>
+        <script>
+            hcf=1;
+            a=parseInt(prompt("Enter a:"));
+            b=parseInt(prompt("Enter b:"));
+
+            for(i=1;i<=a && i<=b;i++){
+                if(a%i==0 && b%i==0){
+                    hcf=i;
+                }
+            }
+            document.write(hcf);
+
+        </script>
+    </body>
+</html>

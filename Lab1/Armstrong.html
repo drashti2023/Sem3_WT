@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title> Lab1_6</title>
+    </head>
+    <body>
+        <script>
+const num = prompt("Enter an integer");
+const digits = num.length;
+var sum = 0;
+var temp = num;
+
+while (temp > 0) {
+
+    var remainder = temp % 10;
+    sum += (remainder ** digits);
+    
+    temp = parseInt(temp / 10); 
+}
+
+if (sum == num) 
+    document.write(num + " is an Armstrong number");
+else 
+    document.write(num + " is not an Armstrong number");
+</script>
+
+</body>
+</html>

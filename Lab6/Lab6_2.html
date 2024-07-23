@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mouse events</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mouse Events </h1>
+    <p>Interact with the page to trigger mouse events:</p>
+
+    <div id="target" style="width: 200px; height: 100px; background-color: lightgray;">
+        Hover over me!
+    </div>
+
+    <script>
+        const targetElement = document.getElementById("target");
+
+        // Mouseover event
+        targetElement.addEventListener("mouseover", () => {
+            targetElement.style.backgroundColor = "yellow";
+        });
+
+        // Mouseout event
+        targetElement.addEventListener("mouseout", () => {
+            targetElement.style.backgroundColor = "lightgray";
+        });
+
+        // Click event
+        targetElement.addEventListener("click", () => {
+            alert("Element clicked!");
+        });
+
+        // Double-click event
+        targetElement.addEventListener("dblclick", () => {
+            alert("Element double-clicked!");
+        });
+
+        // Mouse down event
+        targetElement.addEventListener("mousedown", () => {
+            console.log("Mouse button pressed over the element.");
+        });
+
+        // Mouse up event
+        targetElement.addEventListener("mouseup", () => {
+            console.log("Mouse button released over the element.");
+        });
+
+        // Mouse move event
+        targetElement.addEventListener("mousemove", (event) => {
+            console.log(`Mouse moved at (${event.clientX}, ${event.clientY}).`);
+        });
+    </script>
+</body>
+</html>

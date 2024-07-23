@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>
+		 Change the background color
+		
+	</title>
+</head>
+
+<body style="text-align:center;">
+	<h1 style="color:rgb(34, 3, 14);">
+		Hello World!
+	</h1>
+
+	<button onclick="myFunc()">
+		Change color
+	</button>
+
+	<h2 id="GFG" style="color:rgb(222, 231, 222);"></h2>
+
+	<script>
+		result = document.getElementById("GFG");
+
+		function changeColor(color) {
+			document.body.style.background = color;
+		}
+
+		function myFunc() {
+			changeColor('teal');
+			result.innerHTML = "Background Color changed";
+		}	 
+	</script>
+</body>
+
+</html>

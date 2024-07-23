@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>
+            Prime Number between the given range of number (Lab2_2)
+        </title>
+    </head>
+    <body>
+        <script>
+            a=parseInt(prompt("Enter a:"));
+            b=parseInt(prompt("Enter b:"));
+        
+            for(i=a;i<=b;i++){
+               count=0;
+                for (j=2;j<i;j++) {
+                   if (i % j == 0) {
+                    count = 1;
+                    break;
+                 }
+              }
+              if(i>1 && count==0){
+                document.write(i);
+                document.write("<br>");
+            }
+        }
+    
+        </script>
+    </body>
+</html>

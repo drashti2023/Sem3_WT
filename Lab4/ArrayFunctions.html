@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab4_2</title>
+</head>
+<body>
+    <script>
+        Student=['Drashti',' Rathod',' Rajkot',' India'];
+        Student.pop();
+        document.write("<br>");
+        document.write("Pop: "+Student);
+        document.write("<br>");
+
+        Student=['Drashti',' Rathod',' Rajkot',' India'];
+        Student.push('Gujarat');
+        document.write("<br>");
+        document.write("Push: "+Student);
+        document.write("<br>");
+
+        Student=['Drashti',' Rathod',' Rajkot',' India'];
+        Student.shift();
+        document.write("<br>");
+        document.write("Shift: "+Student);
+        document.write("<br>");
+        
+        Student=[' Drashti',' Rathod',' Rajkot',' India'];
+        Student.unshift('Gujarat');
+        document.write("<br>");
+        document.write("Unshift: "+Student);
+        document.write("<br>");
+
+        Student=[' Drashti',' Rathod',' Rajkot',' India'];
+        Student.sort();
+        document.write("<br>");
+        document.write("Sort: "+Student);
+        document.write("<br>")
+
+        Student=['Drashti',' Rathod',' Rajkot',' India'];
+        Student.splice(0,1,'Darshan');
+        document.write("<br>");
+        document.write("Splice: "+Student);
+        document.write("<br>");
+    </script>
+</body>
+</html>
